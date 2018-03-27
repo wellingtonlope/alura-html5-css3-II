@@ -1,150 +1,134 @@
-/*
-	1rem: fonte do navegador
-	1em: fonte do elemento
-*/
-/*Definir tamanho da fonte para alterar o rem*/ 
-html {
-	font-size: 120%;
-}
-
 body {
-	/*Testa as fontes da esquerda para direita, verifica se o usuário possui a fonte*/
-	font-family: "Crimson Text", "Times New Roman", serif;
-	background-color: #F2FFFC;
-	/*espaço entre as linhas*/
-	line-height: 1.5;
+    font-family: "Crimson Text", "Times New Roman", serif;
+    background-color: #F2FFFC;
+    font-size: 120%;
+    line-height: 1.5;
 }
 
-h1, h2 {
-	font-family: "Open Sans Condensed", "Arial", sans-serif;
+h1,
+h2,
+.subtitulo-principal {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
-h2 {
-	font-size: 30px;
-	clear: both;
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
 }
 
-/*h1 é um seletor do css e font-size é o estilo que será aplicado*/
 .titulo-principal {
-	text-align: center;
-	background-color: #851944;
-	color: #FFF;
-	font-size: 3em;
-	padding: 1.25rem; /*1.25rem = 1.25 x tamanho da fonte*/
-	margin: 0;
-	border-bottom: 0.5rem solid black;
-	text-transform: uppercase;
+    text-align: center;
+    background-color: #851944;
+    color: #FFF;
+    padding: 2rem;
+    border-bottom: .5rem solid #000;
 }
 
-p {
-	text-align: justify;
-	margin: 20px 0;
-}
-
-.navegacao-site {
-	background-color: #3C1D3D;
-	color: #F2FFFC;
-	padding: 20px;
-	text-align: center;
-	box-sizing: border-box;
-}
-
-.rodape {
-	background-color: #000;
-	color: #F2FFFC;
-	clear: both;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-}
-
-nav a {
-	color: #F2FFFC;
+.subtitulo-texto {
+    font-size: 1.5em;
+    clear: both;
 }
 
 main a {
-	color: #851944;
+    color: #851944;
 }
 
-main {
-	float: left;
-	width: 85%;
-}
-
-.navegacao-site, .foto-joao {
-	float: right;
-	border-left: 10px solid black;
-	border-bottom: 10px solid black;
-	box-sizing: border-box;
-}
-
-/*position: absolute == relativo a janela*/
-.foto-joao {
-	position: absolute;
-	top: 0;
-	right: 0;
+main p {
+    text-align: justify;
+    margin: 1em 0;
 }
 
 .navegacao-site {
-	clear: right;
-	width: 15%;
-	position: relative;
-	top: 310px;
+    text-align: center;
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 1em;
+}
+
+.navegacao-site a {
+    color: inherit;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-transform: lowercase;
 }
 
 .navegacao-site h1 {
-	font-size: 30px;
-	margin-bottom: 25px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
-/* inherit: esse valor faz com que a propriedade assuma o valor que foi definino em seu pai*/
-.navegacao-site a {
-	color: inherit;
-	font-family: "Open Sans Condensed", sans-serif;
-	text-transform: lowercase;
+.rodape-pagina {
+    background-color: #000;
+    color: #F2FFFC;
+    padding: 1em;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .container {
-	width: 720px;
-	margin: auto;
-	padding: 40px 0;
-	padding-bottom: 80px;
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
 }
 
 strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 em {
-	font-style: italic;
+    font-style: italic;
 }
 
-blockquote, aside, footer {
-	padding: 20px;
+.icones-redes-sociais li {
+    display: inline-block;
 }
 
-/*display: block = empilhar, inline = do lado(sempre fica com o tamanho da fonte), inline-block = permite definir os tamanho do inline*/
-
-.icone-rede-social {
-	display: inline-block;
+.icones-redes-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
 }
 
-.icone-rede-social a{
-	display: block;
-	height: 40px;
-	width: 40px;
-	font-size: 0;
+.github {
+    background-image: url(../imagens/github.png);
 }
 
-.icone-github {
-	background-image: url(../img/github.png);
+.twitter {
+    background-image: url(../imagens/twitter.png);
 }
 
-.icone-twitter {
-	background-image: url(../img/twitter.png);
+.linkedin {
+    background-image: url(../imagens/linkedin.png);
 }
 
-.icone-linkedin {
-	background-image: url(../img/linkedin.png);
+main {
+    width: 80%;
+    float: left;
+    padding-bottom: 4em;
+}
+
+.minha-foto,
+.navegacao-site {
+    border-left: .5em solid black;
+    border-bottom: .5em solid black;
+    box-sizing: border-box;
+}
+
+.navegacao-site {
+    width: 20%;
+    float: right;
+    position: relative;
+    top: 300px;
+}
+
+.minha-foto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
 }
