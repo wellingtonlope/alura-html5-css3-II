@@ -1,0 +1,142 @@
+body {
+	/*Testa as fontes da esquerda para direita, verifica se o usuário possui a fonte*/
+	font-family: "Crimson Text", "Times New Roman", serif;
+	background-color: #F2FFFC;
+	font-size: 20px;
+	/*espaço entre as linhas*/
+	line-height: 1.5;
+}
+
+h1, h2 {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+	clear: both;
+}
+
+/*h1 é um seletor do css e font-size é o estilo que será aplicado*/
+.titulo-principal {
+	text-align: center;
+	background-color: #851944;
+	color: #FFF;
+	font-size: 60px;
+	padding: 25px;
+	margin: 0;
+	border-bottom: 10px solid black;
+	text-transform: uppercase;
+}
+
+p {
+	text-align: justify;
+	margin: 20px 0;
+}
+
+.navegacao-site {
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+	padding: 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.rodape {
+	background-color: #000;
+	color: #F2FFFC;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+nav a {
+	color: #F2FFFC;
+}
+
+main a {
+	color: #851944;
+}
+
+main {
+	float: left;
+	width: 85%;
+}
+
+.navegacao-site, .foto-joao {
+	float: right;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+	box-sizing: border-box;
+}
+
+/*position: absolute == relativo a janela*/
+.foto-joao {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.navegacao-site {
+	clear: right;
+	width: 15%;
+	position: relative;
+	top: 310px;
+}
+
+.navegacao-site h1 {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+/* inherit: esse valor faz com que a propriedade assuma o valor que foi definino em seu pai*/
+.navegacao-site a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+	text-transform: lowercase;
+}
+
+.container {
+	width: 720px;
+	margin: auto;
+	padding: 40px 0;
+	padding-bottom: 80px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+blockquote, aside, footer {
+	padding: 20px;
+}
+
+/*display: block = empilhar, inline = do lado(sempre fica com o tamanho da fonte), inline-block = permite definir os tamanho do inline*/
+
+.icone-rede-social {
+	display: inline-block;
+}
+
+.icone-rede-social a{
+	display: block;
+	height: 40px;
+	width: 40px;
+	font-size: 0;
+}
+
+.icone-github {
+	background-image: url(../img/github.png);
+}
+
+.icone-twitter {
+	background-image: url(../img/twitter.png);
+}
+
+.icone-linkedin {
+	background-image: url(../img/linkedin.png);
+}
