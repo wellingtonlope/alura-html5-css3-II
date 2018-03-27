@@ -1,8 +1,16 @@
+/*
+	1rem: fonte do navegador
+	1em: fonte do elemento
+*/
+/*Definir tamanho da fonte para alterar o rem*/ 
+html {
+	font-size: 120%;
+}
+
 body {
 	/*Testa as fontes da esquerda para direita, verifica se o usuário possui a fonte*/
 	font-family: "Crimson Text", "Times New Roman", serif;
 	background-color: #F2FFFC;
-	font-size: 20px;
 	/*espaço entre as linhas*/
 	line-height: 1.5;
 }
@@ -21,10 +29,10 @@ h2 {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
-	font-size: 60px;
-	padding: 25px;
+	font-size: 3em;
+	padding: 1.25rem; /*1.25rem = 1.25 x tamanho da fonte*/
 	margin: 0;
-	border-bottom: 10px solid black;
+	border-bottom: 0.5rem solid black;
 	text-transform: uppercase;
 }
 
